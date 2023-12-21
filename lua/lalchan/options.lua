@@ -1,11 +1,16 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
-local opt = vim.opt
+local o = vim.opt
 
-opt.ignorecase = true
-opt.smartcase = true
-opt.number = true
-opt.relativenumber = true
-opt.scrolloff = 15
-opt.termguicolors = true
+o.number = true
+o.relativenumber = true
+o.signcolumn = "yes"
+o.updatetime = 250
+o.timeoutlen = 300
+o.termguicolors = true
+o.wrap = false
+o.tabstop = 4
+o.shiftwidth = 4
+o.undofile = true
+o.completeopt = "menuone,noselect"
