@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	"folke/which-key.nvim",
 	init = function() 
-		vim.o.timeout = true
 		vim.o.timeoutlen = 300
 	end,
 	opts= {}, 
@@ -23,5 +22,10 @@ require("lazy").setup({
         	dependencies = {
             		"nvim-lua/plenary.nvim",
     		},
-	}
+	},
+	{
+    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
 }, opts)
