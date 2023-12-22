@@ -1,23 +1,24 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-local o = vim.opt
+local opt = vim.opt
 
-o.number = true
-o.relativenumber = true
-o.signcolumn = "yes"
+opt.number = true
+opt.relativenumber = true
+opt.signcolumn = "yes"
 
-o.updatetime = 250
-o.timeoutlen = 300
+opt.updatetime = 250
+opt.timeoutlen = 300
 
-o.termguicolors = true
+opt.termguicolors = true
 
-o.wrap = false
+opt.wrap = false
 
-o.tabstop = 4
-o.shiftwidth = 4
+opt.tabstop = 4
+opt.shiftwidth = 4
 
-o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
-o.undofile = true
-o.completeopt = "menuone,noselect"
+opt.undofile = true
+opt.completeopt = "menuone,noselect"
+
