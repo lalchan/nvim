@@ -2,9 +2,8 @@
 vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>c', ":noh<CR>")
 
-vim.keymap.set("n", "<leader>G", function() Util.terminal({ "lazygit" }, { cwd = Util.root()}) end)
+vim.keymap.set("n", "<leader>G", ":LazyGit<CR>")
 vim.keymap.set("n", "<leader>U", vim.cmd.UndotreeToggle)
-
 vim.keymap.set('n', '<leader>cr', function ()return  ':IncRename ' .. vim.fn.expand("<cword>")end , {expr = true})
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
