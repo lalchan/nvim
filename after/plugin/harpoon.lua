@@ -1,0 +1,18 @@
+local harpoon = require("harpoon")
+
+-- REQUIRED
+harpoon:setup()
+-- REQUIRED
+
+require("which-key").register { ['<leader>h'] = { name = "[H]arpoon", _ = 'which_key_ignore' } }
+vim.keymap.set("n", "<leader>ha", function() harpoon:list():append() end, {
+	desc = "Mark File"
+})
+vim.keymap.set("n", "<leader>hh", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {
+	desc = "Open Menu"
+})
+
+vim.keymap.set("n", "<C-h>", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<C-j>", function() harpoon:list():select(2) end)
+vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
+vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
