@@ -8,6 +8,7 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 opt.signcolumn = "yes"
+opt.scrolloff = 15
 
 opt.updatetime = 250
 opt.timeoutlen = 300

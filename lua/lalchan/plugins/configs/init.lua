@@ -10,8 +10,12 @@ local harpoon = require("lalchan/plugins/configs/harpoon")
 local lsp = require("lalchan/plugins/configs/lsp")
 local cmp = require("lalchan/plugins/configs/cmp")
 local lazyGit = require("lalchan/plugins/configs/lazygit")
+local undoTree = require("lalchan/plugins/configs/undo_tree")
+local autoPair = require("lalchan/plugins/configs/autoPair")
 
 return {
+	autoPair,
+	undoTree,
 	whichKey,
 	gitSigns,
 	luaLine,
