@@ -2,7 +2,6 @@ local harpoon = require("harpoon")
 
 harpoon:setup({})
 
-require("which-key").register { ['<leader>h'] = { name = "[H]arpoon", _ = 'which_key_ignore' } }
 vim.keymap.set("n", "<leader>ha", function() harpoon:list():append() end, {
 	desc = "Mark File"
 })

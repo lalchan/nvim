@@ -1,6 +1,5 @@
 local builtin = require('telescope.builtin')
 
-require("which-key").register { ['<leader>f'] = { name = "[F]ind Among", _ = 'which_key_ignore' } }
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Files"})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Grep"})
 vim.keymap.set('n', '<leader>fG', builtin.git_files, { desc = "Git Files"})

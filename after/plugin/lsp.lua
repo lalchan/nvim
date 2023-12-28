@@ -5,12 +5,10 @@ local on_attach = function (_, bufnr)
 		end
 		vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
 	end
-	require("which-key").register { ['<leader>l'] = { name = "[L]SP", _ = 'which_key_ignore' } }
 	nmap('<leader>lr', vim.lsp.buf.rename, 'Rename Symbol')
 	nmap('<leader>la', vim.lsp.buf.code_action, 'Code Actions')
 
 
-	require("which-key").register { ['g'] = { name = "[G]oto", _ = 'which_key_ignore' } }
 	nmap('gd', require('telescope.builtin').lsp_definitions , 'Definition')
 	nmap('gD', require('telescope.builtin').lsp_type_definitions , 'Type Definition')
 	nmap('gr', require('telescope.builtin').lsp_references , 'References')
