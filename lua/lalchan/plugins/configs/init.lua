@@ -24,4 +24,4 @@ return {
 	lazyGit,
 	undoTree,
 	themes
-}  
+}
