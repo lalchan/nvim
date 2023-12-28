@@ -1,31 +1,27 @@
-local whichKey = require("lalchan/plugins/configs/which_key")
-local gitSigns = require("lalchan/plugins/configs/git_signs")
-local luaLine = require("lalchan/plugins/configs/lua_line")
-local ibl = require("lalchan/plugins/configs/ibl")
-local comment = require("lalchan/plugins/configs/comment")
+local mini = require("lalchan/plugins/configs/mini")
+local whichKey = require("lalchan/plugins/configs/whichKey")
+local gitSigns = require("lalchan/plugins/configs/gitSigns")
+local lualine = require("lalchan/plugins/configs/lualine")
+local treeSitter = require("lalchan/plugins/configs/treesitter")
 local telescope = require("lalchan/plugins/configs/telescope")
-local treeSitter = require("lalchan/plugins/configs/tree_sitter")
-local oneDark = require("lalchan/plugins/configs/one_dark")
 local harpoon = require("lalchan/plugins/configs/harpoon")
 local lsp = require("lalchan/plugins/configs/lsp")
 local cmp = require("lalchan/plugins/configs/cmp")
 local lazyGit = require("lalchan/plugins/configs/lazygit")
-local undoTree = require("lalchan/plugins/configs/undo_tree")
-local autoPair = require("lalchan/plugins/configs/autoPair")
+local undoTree = require("lalchan/plugins/configs/undoTree")
+local themes = require("lalchan/plugins/configs/themes")
 
 return {
-	autoPair,
-	undoTree,
+	mini,
 	whichKey,
 	gitSigns,
-	luaLine,
-	ibl,
-	comment,
-	harpoon,
+	lualine,
 	telescope,
 	treeSitter,
-	oneDark,
+	harpoon,
 	lsp,
 	cmp,
-	lazyGit
-}
+	lazyGit,
+	undoTree,
+	themes
+}  

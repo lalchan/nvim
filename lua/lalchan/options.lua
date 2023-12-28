@@ -2,6 +2,7 @@ local g = vim.g;
 
 g.mapleader = " "
 g.maplocalleader = "\\"
+g.cmdheight = 0
 
 local opt = vim.opt
 
