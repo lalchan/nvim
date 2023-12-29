@@ -5,7 +5,14 @@ local colorSchemes = {
 	tokyonight = "tokyonight",
 	noClown = "no-clown-fiesta",
 }
-local default= colorSchemes.onedark
 
-vim.cmd.colorscheme(default)
+local default= colorSchemes.tokyonight
+function SetColorScheme(colorScheme)
+	local color = colorScheme or default
+	vim.cmd.colorscheme(color)
 
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+end
+
+SetColorScheme(default)
