@@ -2,10 +2,10 @@ local g = vim.g;
 
 g.mapleader = " "
 g.maplocalleader = "\\"
-g.cmdheight = 0
 
 local opt = vim.opt
 
+opt.cmdheight = 0
 opt.number = true
 opt.relativenumber = true
 opt.signcolumn = "yes"
