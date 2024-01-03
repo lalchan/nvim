@@ -7,8 +7,7 @@ vim.keymap.set({ 'n', 'v' }, '<BS>', '<Nop>', { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
-vim.keymap.set('n', '<leader>e', '<cmd>Ex<cr>', {desc= "Open File Explorer"})
-vim.keymap.set('n', '<leader>c', '<cmd>noh<cr>', {desc= "Clear Highlights"})
+vim.keymap.set('n', '<leader>c', vim.cmd.noh, {desc= "Clear Highlights"})
 
 
 vim.keymap.set('n', '<leader>dk', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
