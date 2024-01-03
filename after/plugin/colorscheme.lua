@@ -6,7 +6,7 @@ local colorSchemes = {
 	noClown = "no-clown-fiesta",
 }
 
-local default= colorSchemes.tokyonight
+local default = colorSchemes.tokyonight
 function SetColorScheme(colorScheme)
 	local color = colorScheme or default
 	vim.cmd.colorscheme(color)

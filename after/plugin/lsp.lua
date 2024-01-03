@@ -1,4 +1,4 @@
-local on_attach = function (_, bufnr)
+local on_attach = function(_, bufnr)
 	local nmap = function(keys, func, desc)
 		if desc then
 			desc = 'LSP: ' .. desc
@@ -7,12 +7,13 @@ local on_attach = function (_, bufnr)
 	end
 	nmap('<leader>lr', vim.lsp.buf.rename, 'Rename Symbol')
 	nmap('<leader>la', vim.lsp.buf.code_action, 'Code Actions')
+	nmap('<leader>lf', vim.lsp.buf.format, 'Format File')
 
 
-	nmap('gd', require('telescope.builtin').lsp_definitions , 'Definition')
-	nmap('gD', require('telescope.builtin').lsp_type_definitions , 'Type Definition')
-	nmap('gr', require('telescope.builtin').lsp_references , 'References')
-	nmap('gi', require('telescope.builtin').lsp_implementations , 'Implementations')
+	nmap('gd', require('telescope.builtin').lsp_definitions, 'Definition')
+	nmap('gD', require('telescope.builtin').lsp_type_definitions, 'Type Definition')
+	nmap('gr', require('telescope.builtin').lsp_references, 'References')
+	nmap('gi', require('telescope.builtin').lsp_implementations, 'Implementations')
 	nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
 end
 
@@ -24,7 +25,7 @@ local servers = {
 	pyright = {},
 	rust_analyzer = {},
 	tsserver = {},
-	html = { filetypes = { 'html', 'twig', 'hbs'} },
+	html = { filetypes = { 'html', 'twig', 'hbs' } },
 	bashls = {},
 	lua_ls = {
 		Lua = {

@@ -1,1 +1,1 @@
-return { 'navarasu/onedark.nvim', priority= 1000 }
+return { 'navarasu/onedark.nvim', priority = 1000 }
