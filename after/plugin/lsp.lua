@@ -1,20 +1,20 @@
 local on_attach = function(_, bufnr)
-	local nmap = function(keys, func, desc)
+	local nmap = function(mode, keys, func, desc)
 		if desc then
 			desc = 'LSP: ' .. desc
 		end
-		vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
+		vim.keymap.set(mode, keys, func, { buffer = bufnr, desc = desc })
 	end
-	nmap('<leader>lr', vim.lsp.buf.rename, 'Rename Symbol')
-	nmap('<leader>la', vim.lsp.buf.code_action, 'Code Actions')
-	nmap('<leader>lf', vim.lsp.buf.format, 'Format File')
+	nmap('n', '<leader>lr', vim.lsp.buf.rename, 'Rename Symbol')
+	nmap('n', '<leader>la', vim.lsp.buf.code_action, 'Code Actions')
+	nmap('n', '<leader>lf', vim.lsp.buf.format, 'Format File')
 
-
-	nmap('gd', require('telescope.builtin').lsp_definitions, 'Definition')
-	nmap('gD', require('telescope.builtin').lsp_type_definitions, 'Type Definition')
-	nmap('gr', require('telescope.builtin').lsp_references, 'References')
-	nmap('gi', require('telescope.builtin').lsp_implementations, 'Implementations')
-	nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
+	nmap('n', 'gd', require('telescope.builtin').lsp_definitions, 'Definition')
+	nmap('n', 'gD', require('telescope.builtin').lsp_type_definitions, 'Type Definition')
+	nmap('n', 'gr', require('telescope.builtin').lsp_references, 'References')
+	nmap('n', 'gi', require('telescope.builtin').lsp_implementations, 'Implementations')
+	nmap('n', 'K', vim.lsp.buf.hover, 'Hover Documentation')
+	nmap('v', '=', vim.lsp.buf.format, 'Format Selected')
 end
 
 require('mason').setup()
