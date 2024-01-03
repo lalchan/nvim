@@ -9,6 +9,7 @@ local lsp = require("lalchan/plugins/configs/lsp")
 local cmp = require("lalchan/plugins/configs/cmp")
 local lazyGit = require("lalchan/plugins/configs/lazygit")
 local undoTree = require("lalchan/plugins/configs/undoTree")
+local oil = require("lalchan/plugins/configs/oil")
 local themes = require("lalchan/plugins/configs/themes")
 
 return {
@@ -23,5 +24,6 @@ return {
 	cmp,
 	lazyGit,
 	undoTree,
+	oil,
 	themes
 }
