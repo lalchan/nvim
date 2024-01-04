@@ -1,2 +1,1 @@
-local oil = require("oil")
-vim.keymap.set('n', '<leader>e', oil.open_float, { desc = "Open File Explorer" })
+vim.keymap.set('n', '<leader>e', vim.cmd.Oil, { desc = "Open File Explorer" })
