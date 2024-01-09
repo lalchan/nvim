@@ -4,9 +4,11 @@ local colorSchemes = {
 	onedark = "onedark",
 	tokyonight = "tokyonight",
 	noClown = "no-clown-fiesta",
+	rosepine = "rose-pine",
+	rosepinemoon = "rose-pine-moon"
 }
 
-local default = colorSchemes.tokyonight
+local default = colorSchemes.rosepinemoon
 function SetColorScheme(colorScheme)
 	local color = colorScheme or default
 	vim.cmd.colorscheme(color)
