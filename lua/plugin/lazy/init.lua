@@ -17,6 +17,7 @@ local harpoon = require("plugin/lazy/harpoon")
 local undotree = require("plugin/lazy/undotree")
 local noice = require("plugin/lazy/noice")
 local lazygit = require("plugin/lazy/lazygit")
+local lualine = require("plugin/lazy/lualine")
 
 return {
 	themes,
@@ -38,4 +39,5 @@ return {
 	undotree,
 	noice,
 	lazygit,
+	lualine,
 }
