@@ -25,7 +25,7 @@ vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 -- Accessibility Shortcuts
-vim.keymap.set("n", "<leader>ee", ":Oil --float<CR>", { desc = "[E]xplore File [E]xplorer" })
+vim.keymap.set("n", "<leader>ee", ":Neotree position=float<CR>", { desc = "[E]xplore File [E]xplorer" })
 vim.keymap.set("n", "<leader>qq", ":qa<CR>", { desc = "Quit Vim(no save)" })
 
 -- Open terminal
