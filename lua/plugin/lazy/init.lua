@@ -3,7 +3,6 @@ local conform = require("plugin.lazy.conform") -- Formatter
 local comment = require("plugin/lazy/comment") -- "gc" to comment visual regions/lines
 local gitsign = require("plugin/lazy/gitsign") -- Adds git related signs to the gutter
 local whichKey = require("plugin/lazy/whichKey") -- Useful plugin to show you pending keybinds
-local neoTree = require("plugin/lazy/neotree") -- File explorer
 local telescope = require("plugin/lazy/telescope") -- Fuzzy Finder
 local treesitter = require("plugin/lazy/treesitter") -- Highlight, edit, and navigate code
 local session = require("plugin/lazy/session") -- Session
@@ -25,7 +24,6 @@ return {
 	comment,
 	gitsign,
 	whichKey,
-	neoTree,
 	telescope,
 	treesitter,
 	session,
