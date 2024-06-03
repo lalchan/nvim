@@ -8,7 +8,6 @@ local treesitter = require("plugin/lazy/treesitter") -- Highlight, edit, and nav
 local session = require("plugin/lazy/session") -- Session
 local dashboard = require("plugin/lazy/dashboard") -- Dashboard
 local harpoon = require("plugin/lazy/harpoon") -- Harpoon
-local lualine = require("plugin/lazy/lualine") -- Lualine
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
@@ -27,7 +26,6 @@ return {
 	session,
 	dashboard,
 	harpoon,
-	lualine,
 	codeium,
 	undotree,
 	mini,
