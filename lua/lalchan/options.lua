@@ -77,3 +77,6 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 20
 -- Set highlight on search,
 vim.opt.hlsearch = true
+
+-- Disable command line
+vim.opt.cmdheight = 0
