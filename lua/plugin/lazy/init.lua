@@ -13,8 +13,6 @@ local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
 local lazygit = require("plugin/lazy/lazygit") -- LazyGit
-local neogit = require("plugin/lazy/neogit") -- NeoGit
-local noice = require("plugin/lazy/noice") -- Pretty UI
 local lsp = require("plugin/lazy/lsp") -- LSP
 local cmp = require("plugin/lazy/cmp") -- Auto Complete
 
@@ -34,8 +32,6 @@ return {
 	undotree,
 	mini,
 	lazygit,
-	neogit,
-	noice,
 	lsp,
 	cmp,
 }
