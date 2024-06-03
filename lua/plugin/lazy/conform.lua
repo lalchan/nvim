@@ -24,12 +24,12 @@ return {
 			scss = { { "prettierd", "prettier" } },
 			markdown = { { "prettierd", "prettier" } },
 			yaml = { { "prettierd", "prettier" } },
-            python = { "isort", "black" },
+			python = { "isort", "black" },
 			lua = { "stylua" },
 			sh = { "beautysh" },
 			zsh = { "beautysh" },
 		},
-		format_on_save = function(bufnr)
+		format_after_save = function(bufnr)
 			-- Disable autoformat for files in a certain path
 			local bufname = vim.api.nvim_buf_get_name(bufnr)
 			if bufname:match("/node_modules/") then
@@ -42,6 +42,5 @@ return {
 				async = true,
 			}
 		end,
-		format_after_save = { lsp_fallback = true },
 	},
 }
