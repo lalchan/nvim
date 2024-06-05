@@ -9,6 +9,32 @@ return {
 		--  - yinq - [Y]ank [I]nside [N]ext [']quote
 		--  - ci'  - [C]hange [I]nside [']quote
 		require("mini.ai").setup({ n_lines = 500 })
+		require("mini.indentscope").setup({
+			draw = {
+				delay = 50,
+			},
+			symbol = "▎",
+		})
+		local animate = require("mini.animate")
+		animate.setup({
+			cursor = {
+				timing = animate.gen_timing.linear({ duration = 100, unit = "total" }),
+			},
+			scroll = {
+				timing = animate.gen_timing.linear({ duration = 100, unit = "total" }),
+			},
+		})
+		require("mini.diff").setup({
+			mappings = {
+				apply = "",
+				reset = "",
+				textobject = "",
+				goto_first = "",
+				goto_prev = "",
+				goto_next = "",
+				goto_last = "",
+			},
+		})
 
 		-- Add/delete/replace surroundings (brackets, quotes, etc.)
 		--
@@ -16,22 +42,6 @@ return {
 		-- - sd'   - [S]urround [D]elete [']quotes
 		-- - sr)'  - [S]urround [R]eplace [)] [']
 		require("mini.surround").setup()
-
-		require("mini.files").setup({
-			mappings = {
-				close = "<Esc>",
-				go_in = "l",
-				go_in_plus = "L",
-				go_out = "h",
-				go_out_plus = "H",
-				reset = "<BS>",
-				reveal_cwd = "@",
-				show_help = "g?",
-				synchronize = ":w",
-				trim_left = "<",
-				trim_right = ">",
-			},
-		})
 
 		-- Simple and easy statusline.
 		--  You could remove this setup call if you don't like it,

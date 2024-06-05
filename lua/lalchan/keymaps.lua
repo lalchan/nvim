@@ -31,3 +31,6 @@ vim.keymap.set("n", "ss", ":w<CR>", { desc = "Save Current Buffer" })
 
 -- Open terminal
 vim.keymap.set("n", "<leader>et", ":terminal<CR>", { desc = "[E]xplore [T]erminal" })
+
+-- Toggle Diff
+vim.keymap.set("n", "<leader>gd", ":lua MiniDiff.toggle_overlay()<CR>", { desc = "Toggle [D]iff" })
