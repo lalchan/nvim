@@ -9,10 +9,10 @@ local session = require("plugin/lazy/session") -- Session
 local dashboard = require("plugin/lazy/dashboard") -- Dashboard
 local oil = require("plugin/lazy/oil") -- File explorer
 local harpoon = require("plugin/lazy/harpoon") -- Harpoon
+local neogit = require("plugin/lazy/neogit")
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
-local lazygit = require("plugin/lazy/lazygit") -- LazyGit
 local lsp = require("plugin/lazy/lsp") -- LSP
 local cmp = require("plugin/lazy/cmp") -- Auto Complete
 
@@ -28,10 +28,10 @@ return {
 	dashboard,
 	oil,
 	harpoon,
+	neogit,
 	codeium,
 	undotree,
 	mini,
-	lazygit,
 	lsp,
 	cmp,
 }
