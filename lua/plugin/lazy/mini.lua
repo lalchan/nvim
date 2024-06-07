@@ -40,6 +40,15 @@ return {
 			scroll = {
 				timing = animate.gen_timing.linear({ duration = 100, unit = "total" }),
 			},
+			resize = {
+				enable = false,
+			},
+			open = {
+				enable = false,
+			},
+			close = {
+				enable = false,
+			},
 		})
 
 		require("mini.cursorword").setup({
