@@ -9,6 +9,7 @@ local dashboard = require("plugin/lazy/dashboard") -- Dashboard
 local oil = require("plugin/lazy/oil") -- File explorer
 local harpoon = require("plugin/lazy/harpoon") -- Harpoon
 local neogit = require("plugin/lazy/neogit")
+local flash = require("plugin/lazy/flash")
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
 local transparent = require("plugin/lazy/transparent")
@@ -28,6 +29,7 @@ return {
 	oil,
 	harpoon,
 	neogit,
+	flash,
 	codeium,
 	undotree,
 	transparent,
