@@ -18,6 +18,9 @@ return {
 			},
 			symbol = "▎",
 		})
+
+		require("mini.pairs").setup({})
+
 		local animate = require("mini.animate")
 		animate.setup({
 			cursor = {
