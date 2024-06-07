@@ -11,6 +11,7 @@ local harpoon = require("plugin/lazy/harpoon") -- Harpoon
 local neogit = require("plugin/lazy/neogit")
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
+local transparent = require("plugin/lazy/transparent")
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
 local lsp = require("plugin/lazy/lsp") -- LSP
 local cmp = require("plugin/lazy/cmp") -- Auto Complete
@@ -29,6 +30,7 @@ return {
 	neogit,
 	codeium,
 	undotree,
+	transparent,
 	mini,
 	lsp,
 	cmp,
