@@ -1,6 +1,5 @@
 local themes = require("plugin/lazy/themes") -- Themes
 local conform = require("plugin.lazy.conform") -- Formatter
-local comment = require("plugin/lazy/comment") -- "gc" to comment visual regions/lines
 local gitsign = require("plugin/lazy/gitsign") -- Adds git related signs to the gutter
 local whichKey = require("plugin/lazy/whichKey") -- Useful plugin to show you pending keybinds
 local telescope = require("plugin/lazy/telescope") -- Fuzzy Finder
@@ -19,7 +18,6 @@ local cmp = require("plugin/lazy/cmp") -- Auto Complete
 return {
 	themes,
 	conform,
-	comment,
 	gitsign,
 	whichKey,
 	telescope,
