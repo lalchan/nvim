@@ -30,6 +30,11 @@ return {
 				timing = animate.gen_timing.linear({ duration = 100, unit = "total" }),
 			},
 		})
+
+		require("mini.cursorword").setup({
+			delay = 150,
+		})
+
 		require("mini.diff").setup({
 			mappings = {
 				apply = "",
