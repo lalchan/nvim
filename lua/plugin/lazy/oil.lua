@@ -36,6 +36,16 @@ return {
 		view_options = {
 			show_hidden = true,
 		},
+		float = {
+			-- Padding around the floating window
+			padding = 0,
+			max_width = 100,
+			max_height = 30,
+			border = "rounded",
+			win_options = {
+				winblend = 0,
+			},
+		},
 	},
 	-- Optional dependencies
 	dependencies = { "nvim-tree/nvim-web-devicons" },
