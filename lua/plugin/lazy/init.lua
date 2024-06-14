@@ -15,6 +15,7 @@ local undotree = require("plugin/lazy/undotree") -- Undotree
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
 local lsp = require("plugin/lazy/lsp") -- LSP
 local cmp = require("plugin/lazy/cmp") -- Auto Complete
+local treesittercontext = require("plugin/lazy/treesitter-context")
 
 return {
 	themes,
@@ -34,4 +35,5 @@ return {
 	mini,
 	lsp,
 	cmp,
+	treesittercontext,
 }
