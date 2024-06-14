@@ -19,8 +19,6 @@ return {
 			symbol = "▎",
 		})
 
-		require("mini.pairs").setup({})
-
 		require("mini.hipatterns").setup({
 			highlighters = {
 				fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
