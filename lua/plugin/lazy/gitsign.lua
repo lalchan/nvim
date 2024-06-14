@@ -3,9 +3,7 @@
 return {
 	"lewis6991/gitsigns.nvim",
 	opts = {
-		signcolumn = false,
-		numhl = true,
-		-- linehl = true,
+		signcolumn = true,
 		current_line_blame = true,
 		on_attach = function(bufnr)
 			local gitsigns = require("gitsigns")
