@@ -18,7 +18,7 @@ return {
 			{
 				"<leader>ha",
 				function()
-					harpoon:list():append()
+					harpoon:list():add()
 				end,
 				desc = "[H]arpoon [A]ppend",
 			},
