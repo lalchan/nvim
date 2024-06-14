@@ -12,7 +12,6 @@ local neogit = require("plugin/lazy/neogit")
 local flash = require("plugin/lazy/flash")
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
-local transparent = require("plugin/lazy/transparent")
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
 local lsp = require("plugin/lazy/lsp") -- LSP
 local cmp = require("plugin/lazy/cmp") -- Auto Complete
@@ -32,7 +31,6 @@ return {
 	flash,
 	codeium,
 	undotree,
-	transparent,
 	mini,
 	lsp,
 	cmp,
