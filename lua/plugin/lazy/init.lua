@@ -1,5 +1,4 @@
 local themes = require("plugin/lazy/themes") -- Themes
-local conform = require("plugin.lazy.conform") -- Formatter
 local gitsign = require("plugin/lazy/gitsign") -- Adds git related signs to the gutter
 local whichKey = require("plugin/lazy/whichKey") -- Useful plugin to show you pending keybinds
 local telescope = require("plugin/lazy/telescope") -- Fuzzy Finder
@@ -13,13 +12,13 @@ local flash = require("plugin/lazy/flash")
 local codeium = require("plugin/lazy/codeium") -- Codeium
 local undotree = require("plugin/lazy/undotree") -- Undotree
 local mini = require("plugin/lazy/mini") -- Collection of various small independent plugins/modules
-local lsp = require("plugin/lazy/lsp") -- LSP
-local cmp = require("plugin/lazy/cmp") -- Auto Complete
 local treesittercontext = require("plugin/lazy/treesitter-context")
+local cmp = require("plugin/lazy/cmp") -- Auto Complete
+local lsp = require("plugin/lazy/lsp") -- LSP
+local conform = require("plugin.lazy.conform") -- Formatter
 
 return {
 	themes,
-	conform,
 	gitsign,
 	whichKey,
 	telescope,
@@ -33,7 +32,8 @@ return {
 	codeium,
 	undotree,
 	mini,
+	treesittercontext,
 	lsp,
 	cmp,
-	treesittercontext,
+	conform,
 }
