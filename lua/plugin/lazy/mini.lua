@@ -12,13 +12,6 @@ return {
 
 		require("mini.comment").setup({})
 
-		require("mini.indentscope").setup({
-			draw = {
-				delay = 50,
-			},
-			symbol = "▎",
-		})
-
 		require("mini.hipatterns").setup({
 			highlighters = {
 				fixme = { pattern = "%f[%w]()FIXME()%f[%W]", group = "MiniHipatternsFixme" },
@@ -51,18 +44,6 @@ return {
 
 		require("mini.cursorword").setup({
 			delay = 150,
-		})
-
-		require("mini.diff").setup({
-			mappings = {
-				apply = "",
-				reset = "",
-				textobject = "",
-				goto_first = "",
-				goto_prev = "",
-				goto_next = "",
-				goto_last = "",
-			},
 		})
 
 		-- Add/delete/replace surroundings (brackets, quotes, etc.)
