@@ -28,19 +28,7 @@ return {
 			lua = { "stylua" },
 			sh = { "beautysh" },
 			zsh = { "beautysh" },
+			astro = { "prettier" },
 		},
-		format_after_save = function(bufnr)
-			-- Disable autoformat for files in a certain path
-			local bufname = vim.api.nvim_buf_get_name(bufnr)
-			if bufname:match("/node_modules/") then
-				return
-			end
-			local disable_filetypes = { c = true, cpp = true, env = true }
-			return {
-				timeout_ms = 500,
-				lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
-				async = true,
-			}
-		end,
 	},
 }
