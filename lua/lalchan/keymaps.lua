@@ -1,32 +1,33 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+local map = vim.keymap.set
 
 -- but clear on pressing <Esc> in normal mode
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
-vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+map("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
+map("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
+map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
+map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
 
 -- TIP: Disable arrow keys in normal mode
-vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+map("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
+map("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
+map("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
+map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 -- Accessibility Shortcuts
-vim.keymap.set("n", "<leader>ee", ":Oil --float<CR>", { desc = "[E]xplore File [E]xplorer" })
-vim.keymap.set("n", "<leader>qq", ":qa<CR>", { desc = "Quit Vim(no save)" })
-vim.keymap.set("n", "<leader>ss", ":w<CR>", { desc = "Save Current Buffer" })
+map("n", "<leader>ee", ":Oil --float<CR>", { desc = "[E]xplore File [E]xplorer" })
+map("n", "<leader>qq", ":qa<CR>", { desc = "Quit Vim(no save)" })
+map("n", "<leader>ss", ":w<CR>", { desc = "Save Current Buffer" })
 
 -- Open terminal
-vim.keymap.set("n", "<leader>et", ":terminal<CR>", { desc = "[E]xplore [T]erminal" })
+map("n", "<leader>et", ":terminal<CR>", { desc = "[E]xplore [T]erminal" })
 
 -- Toggle Diff
-vim.keymap.set("n", "<leader>gd", ":lua MiniDiff.toggle_overlay()<CR>", { desc = "Toggle [D]iff" })
+map("n", "<leader>gd", ":lua MiniDiff.toggle_overlay()<CR>", { desc = "Toggle [D]iff" })
