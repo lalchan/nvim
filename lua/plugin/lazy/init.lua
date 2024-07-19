@@ -7,7 +7,7 @@ local session = require("plugin.lazy.session") -- Session
 local dashboard = require("plugin.lazy.dashboard") -- Dashboard
 local oil = require("plugin.lazy.oil") -- File explorer
 local harpoon = require("plugin.lazy.harpoon") -- Harpoon
-local neogit = require("plugin.lazy.neogit")
+local lazygit = require("plugin.lazy.lazygit")
 local flash = require("plugin.lazy.flash")
 local codeium = require("plugin.lazy.codeium") -- Codeium
 local undoTree = require("plugin.lazy.undo-tree") -- Undotree
@@ -28,7 +28,7 @@ return {
 	dashboard,
 	oil,
 	harpoon,
-	neogit,
+	lazygit,
 	flash,
 	codeium,
 	undoTree,
