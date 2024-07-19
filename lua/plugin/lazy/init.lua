@@ -15,6 +15,7 @@ local mini = require("plugin.lazy.mini") -- Collection of various small independ
 local treeSitterContext = require("plugin.lazy.tree-sitter-context")
 local cmp = require("plugin.lazy.cmp") -- Auto Complete
 local lsp = require("plugin.lazy.lsp") -- LSP
+local lualine = require("plugin.lazy.lualine")
 local conform = require("plugin.lazy.conform") -- Formatter
 
 return {
@@ -35,5 +36,6 @@ return {
 	treeSitterContext,
 	lsp,
 	cmp,
+	lualine,
 	conform,
 }
