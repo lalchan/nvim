@@ -6,8 +6,12 @@ local map = vim.keymap.set
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-map("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
-map("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
+map("n", "[d", function()
+	vim.diagnostic.jump({ count = -1, float = true })
+end, { desc = "Go to previous [D]iagnostic message" })
+map("n", "]d", function()
+	vim.diagnostic.jump({ count = 1, float = true })
+end, { desc = "Go to next [D]iagnostic message" })
 map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
@@ -29,7 +33,8 @@ map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 -- Accessibility Shortcuts
 map("n", "<leader>ee", ":Oil --float<CR>", { desc = "[E]xplore File [E]xplorer" })
-map("n", "<leader>qq", ":qa<CR>", { desc = "Quit Vim(no save)" })
+map("n", "<leader>w", "<c-w>", { desc = "Manage [W]indows" })
+map("n", "<leader>qq", ":qa!<CR>", { desc = "Quit Vim(no save)" })
 map("n", "<leader>ss", ":w<CR>", { desc = "Save Current Buffer" })
 
 -- Open terminal

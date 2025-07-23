@@ -19,7 +19,7 @@ return {
 					icon_hl = "@variable",
 					desc = "Explorer",
 					group = "Label",
-					action = "netrw",
+					action = "Oil --float",
 					key = "e",
 				},
 				{

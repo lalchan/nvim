@@ -10,7 +10,7 @@ return {
 		--  - ci'  - [C]hange [I]nside [']quote
 		require("mini.ai").setup({ n_lines = 500 })
 
-		require("mini.comment").setup({})
+		require("mini.pairs").setup({})
 
 		require("mini.hipatterns").setup({
 			highlighters = {
@@ -18,7 +18,7 @@ return {
 				hack = { pattern = "%f[%w]()HACK()%f[%W]", group = "MiniHipatternsHack" },
 				todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
 				note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
-				-- Highlight hex color strings (`#rrggbb`) using that color
+				-- Highlight hex color strings (`#rrggbb`) using that color #aa55aa
 				hex_color = require("mini.hipatterns").gen_highlighter.hex_color(),
 			},
 		})
@@ -43,7 +43,7 @@ return {
 		})
 
 		require("mini.cursorword").setup({
-			delay = 150,
+			delay = 50,
 		})
 
 		-- Add/delete/replace surroundings (brackets, quotes, etc.)
@@ -53,18 +53,6 @@ return {
 		-- - sr)'  - [S]urround [R]eplace [)] [']
 		require("mini.surround").setup({
 			highlight_duration = 150,
-			mappings = {
-				add = "<leader>sa", -- Add surrounding in Normal and Visual modes
-				delete = "<leader>sd", -- Delete surrounding
-				find = "<leader>sf", -- Find surrounding (to the right)
-				find_left = "<leader>sF", -- Find surrounding (to the left)
-				highlight = "<leader>sh", -- Highlight surrounding
-				replace = "<leader>sr", -- Replace surrounding
-				update_n_lines = "<leader>sn", -- Update `n_lines`
-
-				suffix_last = "l", -- Suffix to search with "prev" method
-				suffix_next = "n", -- Suffix to search with "next" method
-			},
 		})
 	end,
 }
